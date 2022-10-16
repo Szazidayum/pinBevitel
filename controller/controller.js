@@ -25,11 +25,29 @@ class GombController{
             new Szam(this.#lista[index].getIndex(), szuloElem);
         }
         $("#kiir").val('');
-       })
+       });
       $(".konzolra").on("click", () =>{
         console.log($("#kiir").val());
-      })
-       
+      });
+
+      $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){ 
+            if($("#kozep").prop("checked")==true){
+                $(".gombok").css(
+                    'justify-content', 'space-around')
+            } else if($("#kozep").prop("checked")==false){
+                $(".gombok").css("justify-content","");
+                $(".gombok").css(
+                    'justify-content', 'first baseline')
+            
+          }});
+        });
+            /* $(".gombok").css({
+                'justify-content': 'first baseline', */
+      
+
+
+
     }
 
     kever(lista){
