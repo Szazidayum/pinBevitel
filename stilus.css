@@ -23,9 +23,8 @@ article{
     grid-template-columns: 1fr 1fr;
 }
 /* --------------JOBB OLDAL----------------- */
-/* .kiiras{
-border: 1px solid gray;
-} */
+
+/* --------------ÚJRA----------------- */
 .ujra{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
     width: 27%;
@@ -54,12 +53,28 @@ border: 1px solid gray;
     background-image: linear-gradient(to bottom, (0, rgba(245,246,250) 0%, rgba(237,236, 242) 100%));
     border: #707070 solid 1px;
 }
+
+
+/* --------------BEVITT PIN----------------- */ 
+.bevitt{
+    font-size:14px;
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-bottom: 7px;
+}
+#kiir{
+    margin-left: 30px;
+    width: 80px;
+}
+
+
+/* --------------KONZOLRA----------------- */
 .konzolra{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
-    width: 40%;
+    width: 42%;
     height: 1.95em;
     margin-left: 30px;
-    margin-top: 120px;
+    margin-top: 88px;
     border:solid #707070 1px;
     font-size:14px;
     background:grey;
@@ -83,10 +98,54 @@ border: 1px solid gray;
     border: #707070 solid 1px;
 }
 
+.kozepDiv{
+    margin-left: 30px;
+    margin-top: 9px;
+}
+.kozep{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+input[type="checkbox"]{
+    appearance: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
+    border:solid #707070 1px;
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, rgba(249,250,255)), color-stop(1, rgba(215,218,225)));
+    background-image: -o-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
+    background-image: -moz-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
+    background-image: -webkit-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
+    background-image: -ms-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
+    background-image: linear-gradient(to bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
+    margin: 0;
+    font: inherit;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 0.15em;
+    color: black;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+.kozep + .kozep{
+margin-top: 1em;
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: black;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
 /* --------------BAL OLDAL----------------- */
-/* .bevitel{
-border: 1px solid gray;
-} */
 .bevitel h2{
     margin: 0;
     font-size: 16px;
@@ -145,51 +204,3 @@ border: 1px solid gray;
     margin-top: 9px;
     color: rgba(0, 0, 0, 0.87);
 }
-
-.kozepDiv{
-    margin-left: 30px;
-    margin-top: 9px;
-}
-.kozep{
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: 1em auto;
-    gap: 0.5em;
-}
-input[type="checkbox"]{
-    appearance: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 1px;
-    border:solid #707070 1px;
-    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(0, rgba(249,250,255)), color-stop(1, rgba(215,218,225)));
-    background-image: -o-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
-    background-image: -moz-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
-    background-image: -webkit-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
-    background-image: -ms-linear-gradient(bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
-    background-image: linear-gradient(to bottom, rgba(249,250,255) 0%, rgba(215,218,22 100%));
-    margin: 0;
-    font: inherit;
-    width: 1.15em;
-    height: 1.15em;
-    border-radius: 0.15em;
-    color: black;
-    transform: translateY(-0.075em);
-    display: grid;
-    place-content: center;
-}
- 
-.kozep + .kozep{
-margin-top: 1em;
-}
-input[type="checkbox"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    transform: scale(0);
-    box-shadow: inset 1em 1em var(--form-control-color);
-    background-color: black;
-    transform-origin: bottom left;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  }
-  input[type="checkbox"]:checked::before {
-    transform: scale(1);
-  }

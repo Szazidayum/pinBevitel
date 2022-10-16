@@ -24,7 +24,11 @@ class GombController{
         for (let index = 0; index < this.#lista.length; index++) {
             new Szam(this.#lista[index].getIndex(), szuloElem);
         }
+        $("#kiir").val('');
        })
+      $(".konzolra").on("click", () =>{
+        console.log($("#kiir").val());
+      })
        
     }
 
