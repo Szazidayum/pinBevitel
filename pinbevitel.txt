@@ -1,0 +1,8 @@
+1. poliformizmus:
+	- ős típussal hivatkozunk gyerekre:
+		public class PinBevitel extends javax.swing.JFrame {...}
+	- kasztolunk egy objektumot a statikus ős típusáról a dinamikus 	  leszármazott típusára:
+		List<Integer> szamok = new ArrayList<>();
+        	for (int i = 0; i < PinBevitel.DB; i++) {
+            		szamok.add(i);
+       		}
